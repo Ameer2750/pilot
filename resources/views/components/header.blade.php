@@ -16,17 +16,25 @@
 
         <div class="flex items-center space-x-4">
             <div class="relative group">
-    
+
 
                 <!-- Dropdown menu -->
                 <div class="relative">
                     <select id="dropdown"
                         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center">
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="dashboard">Dashboard</option>
-                        <option value="settings">Settings</option>
-                        <option value="earnings">Earnings</option>
-                        <option value="signout">Sign Out</option>
+                        <option value="" selected="selected">All</option>
+                        <option value="shashvata-anna-nidhi">Shashvata Anna Nidhi</option>
+                        <option value="shashvata-puja-nidhulu">Shashvata Puja Nidhulu</option>
+                        <option class="" value="shashvata-veda-nidhi">Shashvata Veda Nidhi</option>
+                        <option class="" value="sri-ganapathi-sevas">Sri Lakshmi Ganapathi Devalaya Sevas</option>
+                        <option class="" value="sri-shaneshchara-swamy-sevas">Sri Shaneshchara Swamy Devalayam Sevas
+                        </option>
+                        <option class="" value="sri-subramanya-swamy-sevas">Sri Subramanyeshwara Swamy Devalaya Sevas
+                        </option>
+                        <option class="" value="sri-venkateshwara-swamy-sevas">Sri Venkateshwara Swamy Devalayam Sevas
+                        </option>
+                        <option class="" value="sri-vidya-saraswathi-amma-sevas">Sri Vidya Saraswathi Ammavari Sevas
+                        </option>
                     </select>
                 </div>
             </div>
