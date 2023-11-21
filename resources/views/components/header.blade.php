@@ -4,41 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Your Website</title>
 </head>
 
-<body>
+<body class="font-sans">
 
-    <header>
-        <img src="{{ URL('images/logo-1an.png')}}">
-        <select name="product_cat" id="header-search-product-cat" class="product-cat-dd">
-            <option value="0" selected="selected">All</option>
-            <option class="level-0" value="shashvata-anna-nidhi">Shashvata Anna Nidhi</option>
-            <option class="level-0" value="shashvata-puja-nidhulu">Shashvata Puja Nidhulu</option>
-            <option class="level-0" value="shashvata-veda-nidhi">Shashvata Veda Nidhi</option>
-            <option class="level-0" value="sri-ganapathi-sevas">Sri Lakshmi Ganapathi Devalaya Sevas</option>
-            <option class="level-0" value="sri-shaneshchara-swamy-sevas">Sri Shaneshchara Swamy Devalayam Sevas</option>
-            <option class="level-0" value="sri-subramanya-swamy-sevas">Sri Subramanyeshwara Swamy Devalaya Sevas
-            </option>
-            <option class="level-0" value="sri-venkateshwara-swamy-sevas">Sri Venkateshwara Swamy Devalayam Sevas
-            </option>
-            <option class="level-0" value="sri-vidya-saraswathi-amma-sevas">Sri Vidya Saraswathi Ammavari Sevas</option>
-        </select>
+    <header class="bg-yellow-200 p-4 flex items-center justify-between">
+        <img src="{{ URL('images/logo-1an.png')}}" alt="Logo" class="w-40 h-auto">
 
-        <input type="text">
-        <button>Search</button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
-            viewBox="0 0 16 16">
-            <path
-                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
-            viewBox="0 0 16 16">
-            <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-        </svg>
+        <div class="flex items-center space-x-4">
+            <div class="relative group">
+    
 
-        <button>Log in</button>
-        <button>Register</button>
+                <!-- Dropdown menu -->
+                <div class="relative">
+                    <select id="dropdown"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="dashboard">Dashboard</option>
+                        <option value="settings">Settings</option>
+                        <option value="earnings">Earnings</option>
+                        <option value="signout">Sign Out</option>
+                    </select>
+                </div>
+            </div>
+            <div class="relative">
+                <input type="text"
+                    class="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500">
+                <button class="absolute inset-y-0 right-0 px-4 py-2 bg-blue-500 text-white rounded-r-md">Search</button>
+            </div>
 
+
+
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+            </button>
+
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+            </button>
+
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Log
+                in</button>
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5">Register</button>
+        </div>
     </header>
+
+    <!-- Rest of your content goes here -->
