@@ -76,23 +76,34 @@
     </div>
 
 
-    <section class="flex">
-        <div>
-        <h2 class="p-4 bg-red-200 text-3xl">Upcoming Events</h2>
+    <section class="w-[75%] my-4 mx-2 rounded">
+        <div class="mb-2">
+            <h2 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center font-medium">Upcoming Events</h2>
         </div>
-        <div>
-            <div>
-            <img src="{{URL('images/event image 1.jpeg')}}">
-
-
+        <div class="flex justify-around items-center">
+            <div class="flex flex-col justify-center items-center text-center">
+                <img src="{{URL('images/event image 1.jpeg')}}" class="">
+                <h3 class="p-8 bg-amber-500 text-white rounded-lg text-lg font-medium">
+                    <a href="">
+                        Sri Subramanya Swamy Shashti -
+                        18 Dec 2023
+                    </a>
+                </h3>
             </div>
-            <div>
 
-
-
+            <div class="flex flex-col justify-center items-center text-center">
+                <img src="{{URL('images/event image 1.jpeg')}}" class="">
+                <h3 class="p-8 bg-amber-500 text-white rounded-lg text-lg font-medium">
+                    <a href="">
+                        Vaikunta (Mukkoti) Ekadashi – 22 Dec 2023
+                    </a>
+                </h3>
             </div>
-        </div>
+
         
+
+        </div>
+
     </section>
 
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
