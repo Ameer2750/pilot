@@ -83,9 +83,9 @@
         <div class="flex justify-around items-center">
             <div class="flex flex-col justify-center items-center text-center">
                 <img src="{{URL('images/event image 1.jpeg')}}" class="">
-                <h3 class="p-8 bg-amber-500 text-white rounded-lg text-lg font-medium">
+                <h3 class="p-4 w-96 bg-amber-500 text-white rounded-lg text-lg font-bold">
                     <a href="">
-                        Sri Subramanya Swamy Shashti -
+                        Sri Subramanya Swamy Shashti - <br>
                         18 Dec 2023
                     </a>
                 </h3>
@@ -93,9 +93,10 @@
 
             <div class="flex flex-col justify-center items-center text-center">
                 <img src="{{URL('images/event image 1.jpeg')}}" class="">
-                <h3 class="p-8 bg-amber-500 text-white rounded-lg text-lg font-medium">
+                <h3 class="p-4 w-96 bg-amber-500 text-white rounded-lg text-lg font-bold">
                     <a href="">
-                        Vaikunta (Mukkoti) Ekadashi – 22 Dec 2023
+                        Vaikunta (Mukkoti) Ekadashi - <br>
+                         22 Dec 2023
                     </a>
                 </h3>
             </div>
@@ -104,6 +105,7 @@
 
         </div>
 
+        <div class="h-0.5 mt-3 bg-black w-full"></div>
     </section>
 
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
