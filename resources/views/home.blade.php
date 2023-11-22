@@ -1,5 +1,4 @@
 <x-header />
-<x-navbar />
 
 <div class="max-w-full mx-auto">
 
@@ -76,7 +75,7 @@
     </div>
 
 
-    <section class="w-[75%] my-4 mx-2 rounded">
+    <!-- <section class="w-[75%] my-4 mx-2 rounded">
         <div class="mb-2">
             <h2 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center font-medium">Upcoming Events</h2>
         </div>
@@ -96,17 +95,17 @@
                 <h3 class="p-4 w-96 bg-amber-500 text-white rounded-lg text-lg font-bold">
                     <a href="">
                         Vaikunta (Mukkoti) Ekadashi - <br>
-                         22 Dec 2023
+                        22 Dec 2023
                     </a>
                 </h3>
             </div>
 
-        
+
 
         </div>
 
         <div class="h-0.5 mt-3 bg-black w-full"></div>
-    </section>
+    </section> -->
 
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </div>
