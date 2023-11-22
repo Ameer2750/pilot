@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
     <title>Your Website</title>
 </head>
 
@@ -96,7 +98,7 @@
     </header>
 
     <div id="mobile-menu"
-        class="md:static absolute bg-[#fcb800] md:min-h-fit min-h-[60vh] md:w-auto w-full top-0 hidden  left-0 z-50 flex md:justify-center items-center md:pt-2 md:py-0 py-8 px-5 ">
+        class="md:static absolute bg-[#fcb800] md:min-h-fit min-h-[60vh] md:w-auto w-full top-0 hidden  left-0 z-50 flex md:justify-center items-center md:pt-2 md:py-0 py-8 px-5">
         <ion-icon id="close-icon" class="text-4xl absolute top-10 right-5 cursor-pointer md:hidden"
             name="close"></ion-icon>
         <ul class="flex md:flex-row flex-col justify-center md:items-center md:gap-[4vw] gap-6 font-semibold">
