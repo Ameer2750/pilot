@@ -1,10 +1,9 @@
 <x-header />
 
-<div class="">
-
+<section class="">
     <!-- image carousel -->
     <div id="default-carousel" class="relative" data-carousel="static">
-        <div class="overflow-hidden relative h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <div class="overflow-hidden relative h-56 md:h-72 sm:h-64 xl:h-80 2xl:h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span
                     class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer
@@ -77,7 +76,7 @@
 
 
 
-    <div class="md:flex">
+    <section class="md:flex mb-4 mx-4">
 
         <!-- upcoming event section -->
         <section class="m-2 md:w-[75%]">
@@ -210,7 +209,7 @@
                 <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
                     Vishesha Seva Subscription links
                 </h3>
-                <div class="flex gap-4 ">
+                <div class="flex flex-col md:flex-row  gap-4  ">
                     <h5
                         class="bg-amber-500 text-white rounded-2xl md:rounded-3xl text-lg  p-8 font-bold w-full text-center">
                         <a class="" href="">
@@ -231,30 +230,116 @@
                     </h5>
                 </div>
             </section>
-
         </section>
 
-        <section class=" flex justify-around">
-            <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/right-side-img-1.png')}}" class="rounded-full w-36" alt="swami image">
-                <p class="text-lg font-semibold text-[#DB5D14]  text-center">Sri Kanchi Kamakoti Peetam
-                </p>
+        <section class="flex flex-col md:flex-col  md:mt-12 ">
+            <div class="flex ">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="{{URL('images/right-side-img-1.png')}}" class="rounded-full w-36" alt="swami image">
+                    <p class="text-lg font-semibold text-[#DB5D14]  text-center">Sri Kanchi Kamakoti Peetam
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="{{URL('images/right-side-img-2.png')}}" class="rounded-full w-36" alt="swami image">
+                    <p class="text-lg font-semibold text-[#DB5D14] text-center">Sri Kanchi Kamakoti Peetam
+                    </p>
+                </div>
             </div>
-            <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/right-side-img-2.png')}}" class="rounded-full w-36" alt="swami image">
-                <p class="text-lg font-semibold text-[#DB5D14] text-center">Sri Kanchi Kamakoti Peetam
-                </p>
+            <h3 class="py-1  text-[#0066cc] text-3xl text-center rounded-full font-semibold	mt-8">
+                Hindu Calender
+            </h3>
+            <div class="text-center">
+                calender space ...
             </div>
+
+            <div class="">
+                <h3 class="py-1  text-[#0066cc] text-3xl text-center rounded-full font-semibold	mt-8">
+                    Mahaprasadham
+                </h3>
+                <div class="md:ml-8 ml-6 text-left">
+                    <p class="font-bold text-gray-800">Nitiya annadhanam timinings :</p>
+                    <p class="font-bold text-[#701a75]">Monday, Tuesday, Wednesday & Thursday</p>
+                    <p class="font-bold text-green-400">Starts 10:30 AM till 1.00 pm</p>
+                    <p class="font-bold text-red-500">Friday, Saturday & Sunday</p>
+                    <p class="font-bold text-green-400">Starts 10:30 AM till 2.00 pm</p>
+                    <p class="font-bold text-green-700">Bramhana Bhojanashala</p>
+                    <p class="font-bold text-[#701a75]">Monday, Tuesday, Wednesday & Thursday</p>
+                    <p class="font-bold text-green-400">Starts 11:00 AM till 1.00 pm</p>
+                    <p class="font-bold text-red-500">Friday, Saturday & Sunday</p>
+                    <p class="font-bold text-green-700">Starts 11:00 AM till 2.00 pm</p>
+
+                </div>
+
+            </div>
+
         </section>
+    </section>
+
+    <!-- Temple History section -->
+    <section class="mb-4 mx-4">
+        <h3 class="py-1  text-[#0066cc] text-3xl text-center rounded-full font-semibold text-center mt-8">
+            Temple History
+        </h3>
+        <p class="mx-2">
+            This temple is run under the guidance of
+            <strong>Sri Kanchi Kamakoti Peetam</strong>
+            . It is around 48 kilometers from Hyderabad in the Vargal village. It is situated on the pictorial
+            background in which has a unique rock formation and a valley around this hill. The hillock of Vargal has
+            multiple temples on the same hill.
+        </p>
+        <ul class="list-disc mx-2 ml-6 my-4">
+            <li><span style="color: #008000;"><strong>Sri Lakshmi Ganapathi Swamy Temple</strong></span></li>
+            <li><span style="color: #008000;"><strong>Sri Vidya Saraswati Ammavari Temple</strong></span></li>
+            <li><span style="color: #008000;"><strong>Lord Shaneshchara Temple</strong></span></li>
+            <li><span style="color: #008000;"><strong>Lord Samba Shiva Temple</strong></span></li>
+            <li><span style="color: #ff6600;"><strong>Lord Venkateshwara Swamy Temple (NEW)</strong></span></li>
+            <li><span style="color: #ff6600;"><strong>Lord Subramanyeshawara Swamy Temple (NEW)</strong></span></li>
+        </ul>
+
+        <p class="mx-2">
+            This temple complex was the brain child of Sri Yayavaram Chandra Shekar Sharma scholared follower of
+            goddesses Saraswathi astrologer and a vastu expert. In 1998 the building process for the above temple was
+            initiated under the group who called themselves as Satya patam seva samithi. This committee researched and
+            selected the hillock of Vargal, which is home to a 400 years old Shambu Deva Temple. This temple is 2 feet
+            below the ground level and one has to pass crawling of the ground for few feets to reach the main Shiva
+            lingam.
+        </p>
+    </section>
+
+    <section class="mb-4 mx-4">
+        <h3 class="py-1 text-[#e9770d] text-3xl text-center rounded-full font-semibold	mb-2">
+            Temple Dieties
+        </h3>
+        <div class="w-full h-3.5 border-b mb-4 border-black"></div>
+        <div class="md:flex  md:justify-between  md:gap-6">
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td1-1.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm ">Sri Lakshmi Ganapathi Deva</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td-2.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm">Sri Saraswathi Ammavaru</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td-3.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm">Sri Shaneshchara Swamy</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td-4.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm">Sri Subramanyeshwara Swamy</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td-5.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm">Sri Venkateshwara Swamy</p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{URL('images/td/td-6.jpeg')}}" alt="..." class="w-40">
+                <p class="text-center font-semibold text-sm">Sri Lingeswara Swamy</p>
+            </div>
+        </div>
+    </section>
 
 
-    </div>
-
-
-
-
-
-
-</div>
+</section>
 
 <x-footer />
