@@ -1,9 +1,9 @@
 <x-header />
 
-<section class="">
+<section class="mt-[9.57%]">
     <!-- image carousel -->
     <div id="default-carousel" class="relative" data-carousel="static">
-        <div class="overflow-hidden relative h-56 md:h-72 sm:h-64 xl:h-80 2xl:h-96">
+        <div class="overflow-hidden relative h-56 md:h-96 lg:h-96 2xl:h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span
                     class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer
@@ -249,7 +249,22 @@
                 Hindu Calender
             </h3>
             <div class="text-center">
-                calender space ...
+                <div class="bg-amber-500 flex justify-center align-center">
+                    <div class="relative max-w-sm ">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                            <svg class="w-4 h-4 text-white font-bold dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                            </svg>
+                        </div>
+                        <input datepicker type="text"
+                            class="bg-amber-500  font-bold text-white text-sm rounded-lg  block w-full pl-10 p-2.5    "
+                            placeholder="Select date" id="myDatePicker">
+                    </div>
+                </div>
+            </div>
+
             </div>
 
             <div class="">
@@ -311,33 +326,128 @@
             Temple Dieties
         </h3>
         <div class="w-full h-3.5 border-b mb-4 border-black"></div>
-        <div class="md:flex  md:justify-between  md:gap-6">
+        <div class="flex md:flex-row flex-col flex-wrap  md:justify-between gap-4 md:gap-6">
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td1-1.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td1-1.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit ">
                 <p class="text-center font-semibold text-sm ">Sri Lakshmi Ganapathi Deva</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td-2.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td-2.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit">
                 <p class="text-center font-semibold text-sm">Sri Saraswathi Ammavaru</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td-3.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td-3.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit">
                 <p class="text-center font-semibold text-sm">Sri Shaneshchara Swamy</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td-4.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td-4.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit">
                 <p class="text-center font-semibold text-sm">Sri Subramanyeshwara Swamy</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td-5.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td-5.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit">
                 <p class="text-center font-semibold text-sm">Sri Venkateshwara Swamy</p>
             </div>
             <div class="flex flex-col justify-center items-center">
-                <img src="{{URL('images/td/td-6.jpeg')}}" alt="..." class="w-40">
+                <img src="{{URL('images/td/td-6.jpeg')}}" alt="..." class="md:w-40 w-72 object-fit">
                 <p class="text-center font-semibold text-sm">Sri Lingeswara Swamy</p>
             </div>
         </div>
     </section>
+
+
+    <div class="flex md:flex-row flex-col justify-around gap-4 items-center md:items-start w-full my-6">
+        <div class="md:w-[50%] w-full h-[400px]" id="map"></div>
+
+        <img src="{{URL('images/gmap-side-img.jpeg')}}" alt="..." class="md:w-96 w-full">
+
+    </div>
+
+
+
+    <!-- map implementation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let map, markers = [];
+            console.log('init marker', @json($initialMarkers));
+            const initialMarkers = @json($initialMarkers);
+
+            function initMap() {
+                map = L.map('map', {
+                    center: {
+                        lat: 28.626137,
+                        lng: 79.821603,
+                    },
+                    zoom: 15
+                });
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
+
+                map.on('click', mapClicked);
+                initMarkers();
+            }
+            initMap();
+
+            function initMarkers() {
+                for (let index = 0; index < initialMarkers.length; index++) {
+                    const data = initialMarkers[index];
+                    const marker = generateMarker(data, index);
+                    marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
+                    map.panTo(data.position);
+                    markers.push(marker);
+                }
+            }
+
+            function generateMarker(data, index) {
+                return L.marker(data.position, {
+                    draggable: data.draggable
+                })
+                    .on('click', (event) => markerClicked(event, index))
+                    .on('dragend', (event) => markerDragEnd(event, index));
+            }
+
+            function mapClicked($event) {
+                console.log(map);
+                console.log($event.latlng.lat, $event.latlng.lng);
+            }
+
+            function markerClicked($event, index) {
+                console.log(map);
+                console.log($event.latlng.lat, $event.latlng.lng);
+            }
+
+            function markerDragEnd($event, index) {
+                console.log(map);
+                console.log($event.target.getLatLng());
+            }
+
+            const data = {
+                position: { lat: 28.625043, lng: 79.810135 },
+                draggable: true
+            };
+
+            const marker = generateMarker(data, markers.length - 1);
+            marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
+            markers.push(marker);
+        });
+    </script>
+
+    <script>
+        // Get today's date
+        const today = new Date();
+
+        // Format the date using the user's locale
+        const formattedDate = today.toLocaleDateString();
+        console.log('formattedDate: ', formattedDate);
+
+        // Get the datepicker element
+        const datePicker = document.getElementById('myDatePicker');
+
+        // Set the default date to the formatted date
+        datePicker.value = formattedDate;
+
+    </script>
 
 
 </section>
