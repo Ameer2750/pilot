@@ -1,11 +1,4 @@
-<style>
-    .svg-icon {
-        fill: #ffa500;
-        /* Replace with your desired color */
-    }
-</style>
-
-<footer class="p-10 bg-red-900 ">
+<footer class="p-10 bg-[#b93131] h-full">
     <div class="flex md:flex-row flex-col items-start justify-start md:gap-6 mx-2 ">
         <div class="md:w-[33%] flex flex-col">
             <div class="flex items-start justify-start gap-6 ">
@@ -15,7 +8,7 @@
                 </svg>
                 <div class="flex flex-col items-start gap-4">
                     <h3 class="text-lg text-[#ffa500]">Sri Vidya Saraswathi Shaneshchara Temples, Vargal</h3>
-                    <p class="text-white">
+                    <p class="text-[#f5f5b1] ">
                         The temple is around 48 kilometers from Hyderabad in the Vargal village. Vargal has famous Sri
                         Vidya Saraswathi temple which is situated or the pictorial background in which has a unique rock
                         formation and a valley around this hill. Here there is one temple was dedicated to lord Shani
@@ -30,7 +23,7 @@
                 <ion-icon class="text-6xl text-[#ffa500] " name="time-outline"></ion-icon>
                 <div class="flex flex-col items-start  ">
                     <h3 class="text-lg text-[#ffa500]">Sri Vidya Saraswathi Shaneshchara Temples, Vargal</h3>
-                    <p class="text-white">
+                    <p class="text-[#f5f5b1] ">
                         Temple Timings <br>
                         <b>Monday to Thursday</b><br>
                         Morning Session<br>
@@ -53,7 +46,7 @@
                 </svg>
                 <div class="flex flex-col items-start ">
                     <h3 class="text-lg text-[#ffa500]">Sri Vidya Saraswathi Shaneshchara Temples, Vargal</h3>
-                    <p class="text-white">
+                    <p class="text-[#f5f5b1] ">
                         The temple is around 48 kilometers from Hyderabad in the Vargal village. Vargal has famous Sri
                         Vidya Saraswathi temple which is situated or the pictorial background in which has a unique rock
                         formation and a valley around this hill. Here there is one temple was dedicated to lord Shani
@@ -66,100 +59,19 @@
     </div>
     <div>
         <div class="w-full h-3.5 border-b border-white"></div>
-        <p class="text-white mt-2">Contact Us <a href="#">Privacy Policy & Terms and conditions</a></p>
+        <p class="text-[#f5f5b1] mt-2">Contact Us <a href="#">Privacy Policy & Terms and conditions</a></p>
         <div class="w-full h-3.5 border-b border-white "></div>
-        <p class="text-white mt-4">Copyright © Sri Vidya Saraswathi Sri Shaneshchara Temples, Vargal 2006</p>
+        <p class="text-[#f5f5b1] mt-4">Copyright © Sri Vidya Saraswathi Sri Shaneshchara Temples, Vargal 2006</p>
     </div>
     <div></div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <footer>
-    <div class="=">
-        <div class="">
-
-        </div>
-        <div class="">
-            <h3>Sri Vidya Saraswathi Shaneshchara Temples, Vargal</h3>
-            <p>The temple is around 48 kilometers from Hyderabad in the Vargal village. Vargal has famous Sri
-                Vidya Saraswathi temple which is situated or the pictorial background in which has a unique rock
-                formation and a valley around this hill. Here there is one temple was dedicated to lord Shani
-                seperately with a big statue measuring around 3 feet in high which is one of the biggest statue
-                of the lord Shaneshchara in Telangana.</p>
-        </div>
-    </div>
-    <div class="">
-        <div class=""><i></i></div>
-        <div class="">
-            <h3>Opening &amp; Closing Timings</h3>
-            <p>Temple Timings<br>
-                <b>Monday to Thursday</b><br>
-                Morning Session<br>
-                06.00 am to 01.00 pm<br>
-                <b>Friday to Sunday </b><br>
-                Morning Session<br>06.00 am to 02.00 pm<br>
-            </p>
-            <div>
-                <b>All days </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> Evening Session&nbsp;<br> 04.00pm to&nbsp;
-                08.00pm
-            </div>
-            <p></p>
-        </div>
-    </div>
-    <div class="">
-        <div class=""><i></i></div>
-        <div class="">
-            <h3>Contact Us</h3>
-            <p>Sri Vidya Saraswathi Sri Shaneshchara Temples,<br>
-                (Under Kanchi KamaKoti Peetham) <br>
-                Vill &amp; Mandal: Wargal - 502279,<br>
-                Dist:Medak, <br>
-                Telangana <br><br>
-            </p>
-            <p>
-                <abbr title="Phone">Mobile</abbr>: 9247851122, 9291277118, 9248151122
-            </p>
-            <p></p>
-        </div>
-    </div>
-    </nav>
-
-    <nav>
-        <div>
-            <ul>
-                <li><a href="https://srivargalvidyasaraswathi.org/contact-us/">Contact Us</a></li>
-                <li><a href="https://srivargalvidyasaraswathi.org/privacy/">Privacy Policy</a></li>
-                <li><a href="https://srivargalvidyasaraswathi.org/terms-conditions/">Terms &amp; Conditions</a></li>
-            </ul>
-        </div>
-        <div>
-            <div>
-                Copyright © Sri Vidya Saraswathi Sri Shaneshchara Temples, Vargal 2006
-            </div>
-        </div>
-        <div>
-            <ul>
-                <li><img src="" alt=""></li>
-            </ul>
-        </div>
-</footer> -->
-
+<style>
+    .svg-icon {
+        fill: #ffa500;
+        /* Replace with your desired color */
+    }
+</style>
 
 </body>
 

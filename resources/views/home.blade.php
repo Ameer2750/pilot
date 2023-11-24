@@ -248,24 +248,43 @@
             <h3 class="py-1  text-[#0066cc] text-3xl text-center rounded-full font-semibold	mt-8">
                 Hindu Calender
             </h3>
-            <div class="text-center">
-                <div class="bg-amber-500 flex justify-center align-center">
-                    <div class="relative max-w-sm ">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
-                            <svg class="w-4 h-4 text-white font-bold dark:text-white" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
+            <div class="bg-white border h-fit py-4">
+                <div class="text-center">
+                    <div class="bg-amber-500 flex justify-center align-center">
+                        <div class="relative max-w-sm ">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-white font-bold dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                </svg>
+                            </div>
+                            <input datepicker type="text"
+                                class="bg-amber-500  font-bold text-white text-sm rounded-lg  block w-full pl-10 p-2.5    "
+                                placeholder="Select date" id="myDatePicker">
                         </div>
-                        <input datepicker type="text"
-                            class="bg-amber-500  font-bold text-white text-sm rounded-lg  block w-full pl-10 p-2.5    "
-                            placeholder="Select date" id="myDatePicker">
                     </div>
                 </div>
-            </div>
+                <div>
+                    <p class="text-md font-bold p-4">New delhi</p>
+                </div>
+                <div class="flex  flex-col justify-center items-center h-fit border">
+                    <div class="w-96 bg-amber-500 border flex justify-center items-center h-fit  p-3">
+                        <p class=" text-white font-bold text-md">Daily panchang</p>
+                    </div>
+                    <div class="border w-96 py-3">
+                        <ul class="text-center flex flex-col items-center justify-center gap-3">
+                            <li><b>Star</b> : Uttarbundra </li>
+                            <li><b>Thithi</b> : Ekadasi </li>
+                            <li><b>Karanam</b> : Cow </li>
+                            <li><b>Nithiyoga</b> : Vajra </li>
+                        </ul>
+                    </div>
+                </div>
+
 
             </div>
+
 
             <div class="">
                 <h3 class="py-1  text-[#0066cc] text-3xl text-center rounded-full font-semibold	mt-8">
