@@ -121,7 +121,7 @@
                 <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
                     Sri Saraswathi Ammavari Seva Subscription Links
                 </h3>
-                <div class="flex gap-4 ">
+                <div class="flex md:flex-row flex-col gap-4 ">
                     <h5
                         class="bg-amber-500 text-white rounded-2xl md:rounded-3xl text-lg p-8 font-bold w-full text-center">
                         <a class="" href="">

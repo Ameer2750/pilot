@@ -26,19 +26,32 @@
     .z-1000 {
         z-index: 3000;
     }
+
+    /* New class to hide the desktop header on smaller screens */
+    .hide-on-mobile {
+        display: block;
+        /* Set your desired display property */
+    }
+
+    @media (max-width: 767px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
 </style>
 
 <body class="h-screen">
-    <header class="bg-[#f4dca8]  w-full z-1000 fixed top-0 py-2 md:py-0">
+
+    <header class="bg-[#f4dca8] w-full z-1000 fixed top-0  hide-on-mobile">
 
         <!-- header image and side shop and person logo -->
-        <div class="flex justify-between items-center mx-5 py-5  md:py-3">
+        <div class="md:flex md:justify-between md:items-center hidden mx-5 py-5">
             <div>
                 <a href="#">
                     <img src="{{ URL('images/logo-1an.png')}}" alt="Logo" class="w-40 object-cover	">
                 </a>
             </div>
-            <div class="md:flex md:justify-around md:items-center hidden">
+            <div class="flex justify-around items-center ">
                 <!-- bg-white w-full md:w-16 font-medium text-sm px-3 py-2 inline items-center -->
                 <div class="flex">
                     <select id="dropdown" class="bg-white w-16 py-1 px-3">
@@ -61,16 +74,15 @@
                         <input type="text" class="py-1 px-3 flex-grow lg:w-96 w-full"
                             placeholder="I want to make puja / Homam .....">
                         <button class="py-1 px-3 bg-red-400 text-white">
-                            <span class="hidden md:block"> Search</span>
-                            <ion-icon class="md:hidden font-bold pt-1" name="search-outline"></ion-icon>
+                            <span class=""> Search</span>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="flex gap-2">
-                <ion-icon class="md:text-4xl text-3xl cursor-pointer" name="bag-handle-outline"></ion-icon>
-                <ion-icon class="md:text-4xl text-3xl cursor-pointer" name="person-outline"></ion-icon>
-                <span class="md:flex md:flex-col hidden md:block">
+                <ion-icon class="text-4xl  cursor-pointer" name="bag-handle-outline"></ion-icon>
+                <ion-icon class="text-4xl  cursor-pointer" name="person-outline"></ion-icon>
+                <span class="flex flex-col  block">
                     <a class=" font-semibold  text-sm  cursor-pointer ">
                         Login
                     </a>
@@ -81,10 +93,43 @@
             </div>
         </div>
 
-        <!-- searchbar and nav menu icon  for medium screens-->
 
-        <div class="flex justify-around items-center md:hidden">
-            <ion-icon id="menu-icon" class="text-4xl md:hidden cursor-pointer" name="menu-outline"></ion-icon>
+        <!-- navigation bar -->
+        <div
+            class="static  bg-[#fcb800] min-h-fit  w-auto  top-0  left-0 z-1000 z-2000 z-50 flex justify-center items-center pt-2 py-2 ">
+            <ul class="flex  justify-center items-center gap-[4vw]  font-semibold">
+                <li><a href="#" class="hover:text-white">HOME</a></li>
+                <li><a href="#" class="hover:text-white">SERVICES</a></li>
+                <li><a href="#" class="hover:text-white">ABOUT US</a></li>
+                <li><a href="#" class="hover:text-white">ANNUAL EVENTS</a></li>
+                <li><a href="#" class="hover:text-white">DONATIONS</a></li>
+                <li><a href="#" class="hover:text-white">PHOTOS</a></li>
+                <li><a href="#" class="hover:text-white">SONGS</a></li>
+                <li><a href="#" class="hover:text-white">VIDEOS</a></li>
+                <li><a href="#" class="hover:text-white">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- desktop header  -->
+
+
+
+
+    <!-- mobile header -->
+
+    <header class="bg-[#f4dca8] w-full  z-1000 fixed top-0 py-2 md:hidden ">
+        <div class="flex justify-between items-center pt-2 pb-4 px-4 mx-auto">
+            <a href="#">
+                <img src="{{ URL('images/logo-1an.png')}}" alt="Logo" class="w-40 object-cover -pl-14 	">
+            </a>
+            <div class="flex gap-2">
+                <ion-icon class=" text-3xl cursor-pointer" name="bag-handle-outline"></ion-icon>
+                <ion-icon class=" text-3xl cursor-pointer" name="person-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="flex justify-around items-center ">
+            <ion-icon id="menu-icon" class="text-4xl  cursor-pointer" name="menu-outline"></ion-icon>
             <!-- bg-white w-full md:w-16 font-medium text-sm px-3 py-2 inline items-center -->
             <div class="flex">
                 <select id="dropdown" class="bg-white w-16 py-1 px-3">
@@ -106,18 +151,18 @@
                 <div class="flex">
                     <input type="text" class="py-1 px-3" placeholder="I want to make puja / Homam .....">
                     <button class="py-1 px-3 bg-red-400 text-white">
-                        <span class="hidden md:block"> Search</span>
-                        <ion-icon class="md:hidden font-bold pt-1" name="search-outline"></ion-icon>
+                        <span class="hidden"> Search</span>
+                        <ion-icon class=" font-bold pt-1" name="search-outline"></ion-icon>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- navigation bar -->
+
+
         <div id="mobile-menu"
-            class="md:static absolute bg-[#fcb800] md:min-h-fit min-h-[60vh] md:w-auto w-full top-0  left-0 z-1000 z-2000 z-50 flex md:justify-center items-center md:pt-2 md:py-2 py-8 px-5">
-            <ion-icon id="close-icon" class="text-4xl absolute top-10 right-5 cursor-pointer md:hidden"
-                name="close"></ion-icon>
-            <ul class="flex md:flex-row flex-col justify-center md:items-center md:gap-[4vw] gap-6 font-semibold">
+            class=" absolute bg-[#fcb800]  min-h-[60vh]  w-full top-0  left-0 z-1000 z-2000 z-50 flex r items-center  py-8 px-5">
+            <ion-icon id="close-icon" class="text-4xl absolute top-5 right-4 cursor-pointer" name="close"></ion-icon>
+            <ul class="flex  flex-col justify-center gap-6 font-semibold">
                 <li><a href="#" class="hover:text-white">HOME</a></li>
                 <li><a href="#" class="hover:text-white">SERVICES</a></li>
                 <li><a href="#" class="hover:text-white">ABOUT US</a></li>
@@ -147,10 +192,5 @@
         // Add event listener to the menu icon for small screens
         menuIcon.addEventListener('click', toggleMobileMenu);
         closeIcon.addEventListener('click', toggleMobileMenu);
-
-        // Auto-show the menu on larger screens
-        if (window.innerWidth >= 768) {
-            mobileMenu.classList.remove("hidden");
-        }
 
     </script>
