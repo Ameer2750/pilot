@@ -98,9 +98,9 @@
         <div
             class="static  bg-[#fcb800] min-h-fit  w-auto  top-0  left-0 z-1000 z-2000 z-50 flex justify-center items-center pt-2 py-2 ">
             <ul class="flex  justify-center items-center gap-[4vw]  font-semibold">
-                <li><a href="#" class="hover:text-white">HOME</a></li>
+                <li><a href="/" class="hover:text-white">HOME</a></li>
                 <li><a href="#" class="hover:text-white">SERVICES</a></li>
-                <li><a href="#" class="hover:text-white">ABOUT US</a></li>
+                <li><a href="/about-us" class="hover:text-white">ABOUT US</a></li>
                 <li><a href="#" class="hover:text-white">ANNUAL EVENTS</a></li>
                 <li><a href="#" class="hover:text-white">DONATIONS</a></li>
                 <li><a href="#" class="hover:text-white">PHOTOS</a></li>

@@ -76,7 +76,7 @@
 
 
 
-    <section class="md:flex mb-4 mx-4">
+    <section class="flex md:flex-row flex-col gap-6 mb-4 mx-4">
 
         <!-- upcoming event section -->
         <section class="m-2 md:w-[75%]">
@@ -232,7 +232,7 @@
             </section>
         </section>
 
-        <section class="flex flex-col md:flex-col  md:mt-12 ">
+        <section class="flex flex-col md:mt-12 ">
             <div class="flex ">
                 <div class="flex flex-col justify-center items-center">
                     <img src="{{URL('images/right-side-img-1.png')}}" class="rounded-full w-36" alt="swami image">
@@ -381,94 +381,92 @@
 
     </div>
 
-
-
-    <!-- map implementation -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let map, markers = [];
-            console.log('init marker', @json($initialMarkers));
-            const initialMarkers = @json($initialMarkers);
-
-            function initMap() {
-                map = L.map('map', {
-                    center: {
-                        lat: 28.626137,
-                        lng: 79.821603,
-                    },
-                    zoom: 15
-                });
-
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '© OpenStreetMap'
-                }).addTo(map);
-
-                map.on('click', mapClicked);
-                initMarkers();
-            }
-            initMap();
-
-            function initMarkers() {
-                for (let index = 0; index < initialMarkers.length; index++) {
-                    const data = initialMarkers[index];
-                    const marker = generateMarker(data, index);
-                    marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
-                    map.panTo(data.position);
-                    markers.push(marker);
-                }
-            }
-
-            function generateMarker(data, index) {
-                return L.marker(data.position, {
-                    draggable: data.draggable
-                })
-                    .on('click', (event) => markerClicked(event, index))
-                    .on('dragend', (event) => markerDragEnd(event, index));
-            }
-
-            function mapClicked($event) {
-                console.log(map);
-                console.log($event.latlng.lat, $event.latlng.lng);
-            }
-
-            function markerClicked($event, index) {
-                console.log(map);
-                console.log($event.latlng.lat, $event.latlng.lng);
-            }
-
-            function markerDragEnd($event, index) {
-                console.log(map);
-                console.log($event.target.getLatLng());
-            }
-
-            const data = {
-                position: { lat: 28.625043, lng: 79.810135 },
-                draggable: true
-            };
-
-            const marker = generateMarker(data, markers.length - 1);
-            marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
-            markers.push(marker);
-        });
-    </script>
-
-    <script>
-        // Get today's date
-        const today = new Date();
-
-        // Format the date using the user's locale
-        const formattedDate = today.toLocaleDateString();
-        console.log('formattedDate: ', formattedDate);
-
-        // Get the datepicker element
-        const datePicker = document.getElementById('myDatePicker');
-
-        // Set the default date to the formatted date
-        datePicker.value = formattedDate;
-
-    </script>
-
-
 </section>
+
+
+<!-- map implementation -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let map, markers = [];
+        console.log('init marker', @json($initialMarkers));
+        const initialMarkers = @json($initialMarkers);
+
+        function initMap() {
+            map = L.map('map', {
+                center: {
+                    lat: 28.626137,
+                    lng: 79.821603,
+                },
+                zoom: 15
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+
+            map.on('click', mapClicked);
+            initMarkers();
+        }
+        initMap();
+
+        function initMarkers() {
+            for (let index = 0; index < initialMarkers.length; index++) {
+                const data = initialMarkers[index];
+                const marker = generateMarker(data, index);
+                marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
+                map.panTo(data.position);
+                markers.push(marker);
+            }
+        }
+
+        function generateMarker(data, index) {
+            return L.marker(data.position, {
+                draggable: data.draggable
+            })
+                .on('click', (event) => markerClicked(event, index))
+                .on('dragend', (event) => markerDragEnd(event, index));
+        }
+
+        function mapClicked($event) {
+            console.log(map);
+            console.log($event.latlng.lat, $event.latlng.lng);
+        }
+
+        function markerClicked($event, index) {
+            console.log(map);
+            console.log($event.latlng.lat, $event.latlng.lng);
+        }
+
+        function markerDragEnd($event, index) {
+            console.log(map);
+            console.log($event.target.getLatLng());
+        }
+
+        const data = {
+            position: { lat: 28.625043, lng: 79.810135 },
+            draggable: true
+        };
+
+        const marker = generateMarker(data, markers.length - 1);
+        marker.addTo(map).bindPopup(`<b>${data.position.lat},  ${data.position.lng}</b>`);
+        markers.push(marker);
+    });
+</script>
+
+<script>
+    // Get today's date
+    const today = new Date();
+
+    // Format the date using the user's locale
+    const formattedDate = today.toLocaleDateString();
+    console.log('formattedDate: ', formattedDate);
+
+    // Get the datepicker element
+    const datePicker = document.getElementById('myDatePicker');
+
+    // Set the default date to the formatted date
+    datePicker.value = formattedDate;
+
+</script>
 
 <x-footer />

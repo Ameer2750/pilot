@@ -1,4 +1,4 @@
-<footer class="p-10 bg-[#b93131] h-full">
+<footer class="p-10 mt-[5rem] bg-[#b93131] lg:h-full">
     <div class="flex md:flex-row flex-col items-start justify-start md:gap-6 mx-2 ">
         <div class="md:w-[33%] flex flex-col">
             <div class="flex items-start justify-start gap-6 ">
@@ -63,7 +63,6 @@
         <div class="w-full h-3.5 border-b border-white "></div>
         <p class="text-[#f5f5b1] mt-4">Copyright © Sri Vidya Saraswathi Sri Shaneshchara Temples, Vargal 2006</p>
     </div>
-    <div></div>
 </footer>
 
 <style>
