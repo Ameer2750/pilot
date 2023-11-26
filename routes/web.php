@@ -18,3 +18,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', function () {
     return view('about');
 });
+Route::get('/contact-us', function () {
+    return view('contact');
+});

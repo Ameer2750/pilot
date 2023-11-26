@@ -106,7 +106,7 @@
                 <li><a href="#" class="hover:text-white">PHOTOS</a></li>
                 <li><a href="#" class="hover:text-white">SONGS</a></li>
                 <li><a href="#" class="hover:text-white">VIDEOS</a></li>
-                <li><a href="#" class="hover:text-white">CONTACT US</a></li>
+                <li><a href="/contact-us" class="hover:text-white">CONTACT US</a></li>
             </ul>
         </div>
     </header>
