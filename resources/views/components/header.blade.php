@@ -101,7 +101,7 @@
                 <li><a href="/" class="hover:text-white">HOME</a></li>
                 <li><a href="#" class="hover:text-white">SERVICES</a></li>
                 <li><a href="/about-us" class="hover:text-white">ABOUT US</a></li>
-                <li><a href="#" class="hover:text-white">ANNUAL EVENTS</a></li>
+                <li><a href="/annual-events" class="hover:text-white">ANNUAL EVENTS</a></li>
                 <li><a href="#" class="hover:text-white">DONATIONS</a></li>
                 <li><a href="#" class="hover:text-white">PHOTOS</a></li>
                 <li><a href="#" class="hover:text-white">SONGS</a></li>
@@ -163,15 +163,15 @@
             class=" absolute bg-[#fcb800]  min-h-[60vh]  w-full top-0  left-0 z-1000 z-2000 z-50 flex r items-center  py-8 px-5">
             <ion-icon id="close-icon" class="text-4xl absolute top-5 right-4 cursor-pointer" name="close"></ion-icon>
             <ul class="flex  flex-col justify-center gap-6 font-semibold">
-                <li><a href="#" class="hover:text-white">HOME</a></li>
+                <li><a href="/" class="hover:text-white">HOME</a></li>
                 <li><a href="#" class="hover:text-white">SERVICES</a></li>
-                <li><a href="#" class="hover:text-white">ABOUT US</a></li>
-                <li><a href="#" class="hover:text-white">ANNUAL EVENTS</a></li>
+                <li><a href="/about-us" class="hover:text-white">ABOUT US</a></li>
+                <li><a href="/annual-events" class="hover:text-white">ANNUAL EVENTS</a></li>
                 <li><a href="#" class="hover:text-white">DONATIONS</a></li>
                 <li><a href="#" class="hover:text-white">PHOTOS</a></li>
                 <li><a href="#" class="hover:text-white">SONGS</a></li>
                 <li><a href="#" class="hover:text-white">VIDEOS</a></li>
-                <li><a href="#" class="hover:text-white">CONTACT US</a></li>
+                <li><a href="/contact-us" class="hover:text-white">CONTACT US</a></li>
             </ul>
         </div>
     </header>

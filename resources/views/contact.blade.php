@@ -1,26 +1,12 @@
 <x-header />
-<style>
-    .header-design-pattern {
-        background-image: url("{{URL('images/bg-about.png')}}");
-        height: 50px;
-        background-repeat: repeat-x;
-        background-position: left center;
-        position: absolute;
-        left: 0;
-        /* Corrected the left position */
-        right: 0;
-        top: 140px;
-        /* Corrected the top position */
 
-    }
-</style>
 <section class="mt-[12rem] mx-8">
-    <div class="header-design-pattern "></div>
+    <x-pattern-design />
     <div class="flex md:flex-row flex-col md:justify-between mx-14">
         <div class="flex flex-col gap-4">
             <h2 class="text-3xl font-bold text-[#E36908]">Address</h2>
             <h3 class="text-xl font-semibold">Sri Vidya Saraswathi Shaneshchara Temples,</h3>
-            <p class="text-base font-medium">(Under Kanchi KamaKoti Peetham) <br>
+            <p class="text-lg  font-semibold">(Under Kanchi KamaKoti Peetham) <br>
                 1-6-15, Gaddi Annaram, <br>
                 Vill & Mandal: Wargal – 502279, <br>
                 Dist:Medak, <br>
@@ -62,10 +48,27 @@
             <button class="text-white text-base font-bold bg-green-400 p-3" type="submit">Send</button>
         </form>
     </div>
-    <div class="flex md:flex-row flex-col justify-around gap-4 items-center md:items-start w-full my-6">
+    <div class="flex md:flex-row flex-col justify-between items-center md:items-start mx-14 my-10">
         <x-map />
 
-        <img src="{{URL('images/gmap-side-img.jpeg')}}" alt="..." class="md:w-96 w-full">
+        <div class="flex flex-col gap-6">
+            <h2 class="text-3xl font-bold  text-[#6EC1E4] ">Temple Timings</h2>
+            <div class="flex flex-col gap-6">
+                <ul class="font-bold text-lg text-center">
+                    <li class="text-black">Monday to Thusday</li>
+                    <li class="text-red-500">Morning Session</li>
+                    <li class="text-red-500">06.00 am to 01.00 pm</li>
+                    <li>Friday to Sunday</li>
+                    <li class="text-red-500">Morning Session</li>
+                    <li class="text-red-500">06.00 am to 02.00 pm</li>
+                </ul>
+                <ul class="font-bold text-lg text-center">
+                    <li>All days </li>
+                    <li class="text-red-500">Evening Session</li>
+                    <li class="text-red-500">04.00pm to 08.00pm</li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 
