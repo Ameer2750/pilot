@@ -19,7 +19,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 
-    <title>Your Website</title>
+    <title>srivargalvidyasaraswathi</title>
 </head>
 
 <style>
@@ -99,13 +99,13 @@
             class="static  bg-[#fcb800] min-h-fit  w-auto  top-0  left-0 z-1000 z-2000 z-50 flex justify-center items-center pt-2 py-2 ">
             <ul class="flex  justify-center items-center gap-[4vw]  font-semibold">
                 <li><a href="/" class="hover:text-white">HOME</a></li>
-                <li><a href="#" class="hover:text-white">SERVICES</a></li>
+                <li><a href="/services" class="hover:text-white">SEVAS/SERVICES</a></li>
                 <li><a href="/about-us" class="hover:text-white">ABOUT US</a></li>
                 <li><a href="/annual-events" class="hover:text-white">ANNUAL EVENTS</a></li>
-                <li><a href="#" class="hover:text-white">DONATIONS</a></li>
-                <li><a href="#" class="hover:text-white">PHOTOS</a></li>
-                <li><a href="#" class="hover:text-white">SONGS</a></li>
-                <li><a href="#" class="hover:text-white">VIDEOS</a></li>
+                <li><a href="/donation" class="hover:text-white">DONATIONS</a></li>
+                <li><a href="/photo" class="hover:text-white">PHOTOS</a></li>
+                <li><a href="/song" class="hover:text-white">SONGS</a></li>
+                <li><a href="/video" class="hover:text-white">VIDEOS</a></li>
                 <li><a href="/contact-us" class="hover:text-white">CONTACT US</a></li>
             </ul>
         </div>
@@ -164,13 +164,13 @@
             <ion-icon id="close-icon" class="text-4xl absolute top-5 right-4 cursor-pointer" name="close"></ion-icon>
             <ul class="flex  flex-col justify-center gap-6 font-semibold">
                 <li><a href="/" class="hover:text-white">HOME</a></li>
-                <li><a href="#" class="hover:text-white">SERVICES</a></li>
+                <li><a href="/services" class="hover:text-white">SERVICES</a></li>
                 <li><a href="/about-us" class="hover:text-white">ABOUT US</a></li>
                 <li><a href="/annual-events" class="hover:text-white">ANNUAL EVENTS</a></li>
-                <li><a href="#" class="hover:text-white">DONATIONS</a></li>
-                <li><a href="#" class="hover:text-white">PHOTOS</a></li>
-                <li><a href="#" class="hover:text-white">SONGS</a></li>
-                <li><a href="#" class="hover:text-white">VIDEOS</a></li>
+                <li><a href="/donation" class="hover:text-white">DONATIONS</a></li>
+                <li><a href="/photo" class="hover:text-white">PHOTOS</a></li>
+                <li><a href="/song" class="hover:text-white">SONGS</a></li>
+                <li><a href="/video" class="hover:text-white">VIDEOS</a></li>
                 <li><a href="/contact-us" class="hover:text-white">CONTACT US</a></li>
             </ul>
         </div>

@@ -80,10 +80,10 @@
 
         <!-- upcoming event section -->
         <section class="m-2 md:w-[75%]">
-            <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center rounded-full font-semibold	">Upcoming
+            <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] mb-2 text-3xl text-center rounded-full font-semibold	">Upcoming
                 Events
             </h3>
-            <div class="md:flex md:justify-between md:items-center ">
+            <div class="md:flex md:justify-between md:gap-6 md:items-center ">
                 <div class="flex flex-col justify-center items-center ">
                     <img src="{{URL('images/event image 1.jpeg')}}" class="" alt="swami image">
                     <h3 class=" bg-amber-500 text-white rounded-full text-lg py-4 font-bold w-full text-center">
@@ -118,7 +118,7 @@
 
             <!-- subscription links section -->
             <div class="">
-                <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
+                <h3 class="py-1 bg-[#ffefa4] mb-4 text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
                     Sri Saraswathi Ammavari Seva Subscription Links
                 </h3>
                 <div class="flex md:flex-row flex-col gap-4 ">
@@ -146,7 +146,7 @@
             <!-- shahswata veda nidhi section -->
             <div class="flex flex-col md:flex-row justify-between items-center mb-4">
                 <div class="flex flex-col justify-center items-center ">
-                    <h3 class="py-1 text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
+                    <h3 class="py-1  text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
                         Sri Saraswathi Ammavari Seva Subscription Links
                     </h3>
                     <img class="w-96" src="{{URL('images/svsst_shaswatha_veda_nidhulu_2023.jpg')}}" alt="">
@@ -206,7 +206,7 @@
 
             <!-- vishesha seva subscription links -->
             <section>
-                <h3 class="py-1 bg-[#ffefa4] text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
+                <h3 class="py-1 bg-[#ffefa4] mb-4 text-[#e9770d] text-3xl text-center rounded-full font-semibold	">
                     Vishesha Seva Subscription links
                 </h3>
                 <div class="flex flex-col md:flex-row  gap-4  ">
